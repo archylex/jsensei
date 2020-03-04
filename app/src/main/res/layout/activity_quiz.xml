@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundQuiz"
+    tools:context=".quiz.QuizActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitEnd"
+        android:src="@drawable/background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="18dp">
+
+        <TextView
+            android:id="@+id/text_view_score"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:freezesText="true"
+            android:text="正解: 0"
+            android:textColor="@color/textQuiz"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round_rectangle" />
+
+        <TextView
+            android:id="@+id/text_view_question_number"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_score"
+            android:freezesText="true"
+            android:text="質問: 1/5"
+            android:textColor="@color/textQuiz"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round_rectangle" />
+
+        <TextView
+            android:id="@+id/text_view_level"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_question_number"
+            android:freezesText="true"
+            android:text="レベル: N5"
+            android:textColor="@color/textQuiz"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/round_rectangle" />
+
+        <TextView
+            android:id="@+id/text_view_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/center_placeholder"
+            android:layout_marginBottom="39dp"
+            android:background="@drawable/round_rectangle"
+            android:freezesText="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Question"
+            android:textAlignment="center"
+            android:textColor="@color/textQuiz"
+            android:textSize="19sp" />
+
+        <LinearLayout
+            android:id="@+id/center_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center_placeholder">
+
+            <RadioButton
+                android:id="@+id/radio_button_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_rectangle"
+                android:freezesText="true"
+                android:text="A" />
+
+            <RadioButton
+                android:id="@+id/radio_button_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_rectangle"
+                android:freezesText="true"
+                android:text="B" />
+
+            <RadioButton
+                android:id="@+id/radio_button_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_rectangle"
+                android:freezesText="true"
+                android:text="C" />
+
+            <RadioButton
+                android:id="@+id/radio_button_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_rectangle"
+                android:freezesText="true"
+                android:text="D" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_group"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_rectangle"
+            android:freezesText="true"
+            android:text="Next" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white_circle" />
+
+        <TextView
+            android:id="@+id/text_view_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:textSize="35sp"
+            android:textColor="@color/textQuiz"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:freezesText="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="io.archylex.jsensei.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_quiz"
+        android:name="io.archylex.jsensei.ui.quiz.QuizFragment"
+        android:label="@string/menu_quiz"
+        tools:layout="@layout/fragment_quiz" />
+
+    <fragment
+        android:id="@+id/nav_lessons"
+        android:name="io.archylex.jsensei.ui.lessons.LessonsFragment"
+        android:label="@string/menu_lessons"
+        tools:layout="@layout/fragment_lessons" />
+
+    <fragment
+        android:id="@+id/nav_kanji"
+        android:name="io.archylex.jsensei.ui.kanji.KanjiFragment"
+        android:label="@string/menu_kanji"
+        tools:layout="@layout/fragment_kanji" />
+
+</navigation>

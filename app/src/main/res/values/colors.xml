@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#496D89</color>
+    <color name="colorPrimaryDark">#123652</color>
+    <color name="colorAccent">#D4BA6A</color>
+
+    <color name="backgroundQuiz">#bc8f7f</color>
+    <color name="textQuiz">#111111</color>
+    <color name="backgroundLessonTheme">#333333</color>
+    <color name="textLessonTheme">#FFFFFF</color>
+    <color name="kanjiWritingBackground">#FFFFFF</color>
+    <color name="blackText">#000000</color>
+    <color name="redText">#e80909</color>
+    <color name="blueText">#0505ff</color>
+    <color name="greenText">#238727</color>
+    <color name="whiteText">#ffffff</color>
+    <color name="lightGrayText">#575757</color>
+
+</resources>

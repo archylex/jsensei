@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">j🔴ensei</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">日本語教科書</string>
+    <string name="nav_header_subtitle">Учебник японского языка</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">ホーム</string>
+    <string name="menu_quiz">日本語能力試験</string>
+    <string name="menu_lessons">授業</string>
+    <string name="menu_kanji">漢字</string>
+    <string name="spinner_title" />
+
+    <string name="title_examples_kanji">例</string>
+    <string name="title_write_kanji">漢字を書く</string>
+    <string name="start_quiz">開始</string>
+    <string name="finish_quiz_result_button">完了</string>
+</resources>

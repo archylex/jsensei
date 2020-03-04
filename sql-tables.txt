@@ -1,0 +1,31 @@
+CREATE TABLE "jlpt" (
+	"_id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	"question"	TEXT NOT NULL,
+	"A"	TEXT NOT NULL,
+	"B"	TEXT NOT NULL,
+	"C"	TEXT NOT NULL,
+	"D"	TEXT NOT NULL,
+	"answer"	INTEGER NOT NULL,
+	"level"	TEXT NOT NULL
+);
+
+
+CREATE TABLE "lessons" (
+	"_id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	"text"	TEXT,
+	"theme"	TEXT NOT NULL,
+	"lesson"	TEXT NOT NULL
+);
+
+
+CREATE TABLE "kanji" (
+	"_id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	"kanji"	TEXT NOT NULL UNIQUE,
+	"translate"	TEXT NOT NULL,
+	"on"	NUMERIC NOT NULL,
+	"kun"	BLOB NOT NULL,
+	"strokes"	INTEGER NOT NULL,
+	"writing"	TEXT,
+	"examples"	TEXT,
+	"class"	TEXT NOT NULL
+);
